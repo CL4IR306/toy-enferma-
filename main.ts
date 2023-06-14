@@ -1,3 +1,5 @@
+let HELADO_IZQUIERDA: Sprite = null
+let helado_derecha: Sprite = null
 let HELADO = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . . . f 2 2 f . . . . . . 
@@ -144,3 +146,15 @@ scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     `)
+animation.runImageAnimation(
+helado_derecha,
+assets.animation`helado derecha`,
+900,
+true
+)
+animation.runImageAnimation(
+HELADO_IZQUIERDA,
+assets.animation`helado izquierda`,
+900,
+true
+)
